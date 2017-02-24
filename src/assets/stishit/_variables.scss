@@ -1,0 +1,29 @@
+/*color*/
+$blue : blue;
+$red : red;
+
+/*fonts*/
+$fontSerif:"Times New Roman",Times, serif;
+$fontSansSerif: "Comic Sans Ms", crsive, sans-serif;
+
+/*mediqueries*/
+
+$screenSm: 768px;
+$screenMd: 1024px;
+$screenLg: 1280px;
+$screenXs-max: ($screenSm - 1);
+
+
+
+@mixin tablet{
+	@media (min-width: #{$screenSm})and (max-width:#{$screenMd}){ 
+		@content;
+	}	
+}
+
+/*mobile 0-599 0-767*/	
+@mixin mobile{
+	@media (max-width: #{$screenXs-max}){ 
+		@content;
+	}
+}

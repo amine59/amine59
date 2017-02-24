@@ -1,0 +1,28 @@
+{# layout.twig #}
+
+{% from "../../companants/header/header.twig" import header as header %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{{title}}</title>
+		<meta name= "viewport" content = "width=device-width, initial-scale=1.0, user-scalable =no">
+		<link rel="stylesheet" href="css/comaude.css"/>
+		{% block css %}
+		
+		{% endblock %}
+	</head>
+	<body>
+		 {{header()}}
+	     {% block content %}
+		
+		{% endblock %}
+		
+		
+	<script src="js/common.js"></script>
+		{% block scripts %}
+		
+		{% endblock %}
+	</body>
+</html>

@@ -1,0 +1,17 @@
+.header{
+text-align : center;
+font-family:$fontSerif;
+}
+	.header-title{
+		font-size:40px;
+	}
+	.header-iconsNext{
+		clor:$red;
+		font-size:25px;
+	}
+ @include mobile {
+	 
+	 .header{
+		font-align: right;
+	}
+ }

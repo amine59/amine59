@@ -1,0 +1,41 @@
+@import "../../assets/stishit/variables";
+
+
+.productList{
+	
+	font-size:0;
+	background :$blue;
+	font-family: $fontSansSerif;
+}
+	.productList-item{
+		display: inline-block;
+		width: 25%;
+		background: reed;
+		text-align: center;
+		background: blue;
+	}
+		.productList-productName{}
+		.productList-productPrice{}
+		.productList-productColor{}
+		.productList-productVisual{
+			display:inline-block;
+			width: 100%;
+			max-width: 100%;
+		}
+		
+	 /*mobile 0-599 0-767*/	
+@include tablet{ 
+	
+	.productList{
+	background :$blue;
+	}
+}	
+
+	
+/*mobile 0-599 0-767*/	
+@include mobile{ 
+	
+	.productList{
+	background :$blue;
+	}
+}
